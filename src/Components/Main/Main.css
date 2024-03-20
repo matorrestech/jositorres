@@ -1,3 +1,130 @@
 .main {
-    padding-top: 55px;
+    background-image: url("src/assets/jositorres.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.florDeLis img {
+    width: 80px;
+}
+
+.main .texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.ola {
+    font-size: 40px;
+    font-weight: 200;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0);
+    margin-bottom: -40px;
+}
+
+.josiTorres {
+    font-size: 140px;
+    font-weight: 500;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0);
+    margin-bottom: -50px;
+}
+
+.nailDesigner {
+    font-size: 40px;
+    font-weight: 200;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0);
+}
+
+.main .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .btnAgendamento {
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid black;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    font-size: 30px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.main .btnAgendamento:hover {
+    color: #ceae71;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 753px) {
+    .florDeLis img {
+        width: 70px;
+    }
+
+    .ola {
+        font-size: 30px;
+        font-weight: 200;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0);
+        margin-bottom: -25px;
+    }
+
+    .josiTorres {
+        font-size: 100px;
+        font-weight: 500;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0);
+        margin-bottom: -30px;
+    }
+
+    .nailDesigner {
+        font-size: 30px;
+        font-weight: 200;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0);
+    }
+
+    .main .btnAgendamento {
+        padding: 5px 20px 5px 20px;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .florDeLis img {
+        width: 45px;
+    }
+
+    .ola {
+        font-size: 30px;
+        font-weight: 200;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0);
+        margin-bottom: -8px;
+    }
+
+    .josiTorres {
+        font-size: 45px;
+        font-weight: 500;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0);
+        margin-bottom: -8px;
+    }
+
+    .nailDesigner {
+        font-size: 25px;
+        font-weight: 200;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0);
+    }
+
+    .main .btnAgendamento {
+        padding: 5px 20px 5px 20px;
+        font-size: 20px;
+        margin-top: 10px;
+    }
 }
