@@ -6,13 +6,15 @@ import "bootstrap/dist/js/bootstrap"
 import "@mdi/font/css/materialdesignicons.css"
 
 import Header from "./Components/Header/Header"
-import Main from "./Components/Main/Main"
+import Start from "./Components/Start/Start"
+import Jobs from "./Components/Jobs/Jobs"
 
 function App() {
     return (
         <div>
             <Header />
-            <Main />
+            <Start />
+            <Jobs />
         </div>
     )
 }
