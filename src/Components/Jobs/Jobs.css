@@ -1,0 +1,14 @@
+.custom-tabs .nav-link {
+    color: black;
+    border: none;
+    font-weight: 500;
+}
+
+.custom-tabs .nav-link.active {
+    color: #ceae71;
+    border-bottom: 1.5px solid #ceae71;
+}
+
+/* .custom-tabs .tab-content {
+    border: none;
+} */
