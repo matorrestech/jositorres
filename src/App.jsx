@@ -7,6 +7,7 @@ import "@mdi/font/css/materialdesignicons.css"
 
 import Header from "./Components/Header/Header"
 import Start from "./Components/Start/Start"
+import Services from "./Components/Services/Services"
 import Jobs from "./Components/Jobs/Jobs"
 
 function App() {
@@ -14,7 +15,10 @@ function App() {
         <div>
             <Header />
             <Start />
-            <Jobs />
+            <div className="screenHeight">
+                <Services />
+                <Jobs />
+            </div>
         </div>
     )
 }
