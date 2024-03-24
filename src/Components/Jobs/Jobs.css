@@ -1,14 +1,83 @@
+.jobs h3 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.custom-tabs {
+    padding-top: 50px;
+    /* padding-bottom: 30px; */
+    border: none;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.jobs .tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 10px;
+}
+
 .custom-tabs .nav-link {
     color: black;
     border: none;
     font-weight: 500;
+    width: 100%;
+}
+
+.custom-tabs .nav-link:hover {
+    border-bottom: 1px solid black;
+    transition: 0.5s;
 }
 
 .custom-tabs .nav-link.active {
     color: #ceae71;
     border-bottom: 1.5px solid #ceae71;
+    background: none;
 }
 
-/* .custom-tabs .tab-content {
-    border: none;
-} */
+/* SWIPER ---------------------------------------------- */
+.jobs .swiper-pagination-bullet {
+    background: white;
+}
+
+.jobs .swiper-pagination-bullet-active {
+    background: black;
+}
+
+.jobs .swiper-button-next,
+.jobs .swiper-button-prev {
+    color: black; /* Cor das setas */
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.jobs .swiper-button-next:after,
+.jobs .swiper-button-prev:after {
+    font-size: 20px;
+}
+
+.jobs .swiperSlide {
+    display: flex;
+    justify-content: center;
+}
+
+/* IMAGES INSIDE OF SWIPER ------------------------------- */
+.jobs img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    margin: 2px;
+    padding: 2px;
+}
+
+.jobs img:hover {
+    box-shadow: 0 0 30px rgba(200, 200, 200);
+    transition: 0.5s;
+}

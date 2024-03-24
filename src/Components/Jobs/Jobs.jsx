@@ -1,15 +1,34 @@
-import React from "react"
+import React, { useRef, useState } from "react"
 import "./Jobs.css"
 
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules"
-
+// SWIPER ----------------------------------------
 import { Swiper, SwiperSlide } from "swiper/react"
-
-// Import Swiper styles
+import { Navigation, Pagination } from "swiper/modules"
+import "swiper/css/pagination"
 import "swiper/css"
 import "swiper/css/navigation"
-import "swiper/css/pagination"
-import "swiper/css/scrollbar"
+
+// ARTISTIC IMAGES ------------------------------------------
+import artistic01 from "../../assets/artistic/artistic01.webp"
+import artistic02 from "../../assets/artistic/artistic02.webp"
+import artistic03 from "../../assets/artistic/artistic03.webp"
+import artistic04 from "../../assets/artistic/artistic04.webp"
+import artistic05 from "../../assets/artistic/artistic05.webp"
+import artistic06 from "../../assets/artistic/artistic06.webp"
+
+import fleurdelis from "../../assets/fleurDeLis.png"
+
+const imgArtistic = [
+    artistic01,
+    artistic02,
+    artistic03,
+    artistic04,
+    artistic05,
+    artistic06,
+]
+const imgPolish = [fleurdelis]
+const imgExtension = [fleurdelis]
+const imgAll = [].concat(imgArtistic, imgPolish, imgExtension)
 
 import Tab from "react-bootstrap/Tab"
 import Tabs from "react-bootstrap/Tabs"
@@ -17,43 +36,187 @@ import Tabs from "react-bootstrap/Tabs"
 export default function Jobs() {
     return (
         <>
-            <div>
+            <section className="jobs">
+                <h3>Meus últimos designes criados</h3>
                 <Tabs
                     defaultActiveKey="all"
                     id="justify-tab-example"
-                    className="d-flex justify-content-center custom-tabs"
+                    className="custom-tabs "
                     justify
                 >
-                    <Tab eventKey="all" title="Todos">
-                        <Swiper
-                            // install Swiper modules
-                            modules={[Navigation, Pagination, Scrollbar, A11y]}
-                            spaceBetween={50}
-                            slidesPerView={3}
-                            navigation
-                            pagination={{ clickable: true }}
-                            scrollbar={{ draggable: true }}
-                            onSwiper={(swiper) => console.log(swiper)}
-                            onSlideChange={() => console.log("slide change")}
-                        >
-                            <SwiperSlide>Slide 1</SwiperSlide>
-                            <SwiperSlide>Slide 2</SwiperSlide>
-                            <SwiperSlide>Slide 3</SwiperSlide>
-                            <SwiperSlide>Slide 4</SwiperSlide>
-                            ...
-                        </Swiper>
+                    {/*  TAB => ALL/TODOS ---------------------------------- */}
+                    <Tab className="all" eventKey="all" title="Todos">
+                        <div className="tabs">
+                            <Swiper
+                                modules={[Pagination, Navigation]}
+                                pagination={{ clickable: true }}
+                                navigation={true}
+                                className="mySwiper"
+                                slidesPerView={3}
+                                spaceBetween={30}
+                                breakpoints={{
+                                    320: {
+                                        slidesPerView: 1,
+                                        spaceBetween: 10,
+                                    },
+
+                                    768: {
+                                        slidesPerView: 2,
+                                        spaceBetween: 20,
+                                    },
+
+                                    1024: {
+                                        slidesPerView: 3,
+                                        spaceBetween: 30,
+                                    },
+                                }}
+                            >
+                                {imgAll.map((image, index) => (
+                                    <SwiperSlide key={index}>
+                                        <div className="swiperSlide">
+                                            <img
+                                                src={image}
+                                                alt={`Slide ${index + 1}`}
+                                            />
+                                        </div>
+                                    </SwiperSlide>
+                                ))}
+                            </Swiper>
+                        </div>
                     </Tab>
-                    <Tab eventKey="artistic" title="Artístico">
-                        Artístico
+
+                    {/*  TAB => ARTISTIC/ARTÍSTICO -------------------------- */}
+                    <Tab
+                        className="artistic"
+                        eventKey="artistic"
+                        title="Artístico"
+                    >
+                        <div className="tabs">
+                            <Swiper
+                                modules={[Pagination, Navigation]}
+                                pagination={{ clickable: true }}
+                                navigation={true}
+                                className="mySwiper"
+                                slidesPerView={3}
+                                spaceBetween={30}
+                                breakpoints={{
+                                    320: {
+                                        slidesPerView: 1,
+                                        spaceBetween: 10,
+                                    },
+
+                                    768: {
+                                        slidesPerView: 2,
+                                        spaceBetween: 20,
+                                    },
+
+                                    1024: {
+                                        slidesPerView: 3,
+                                        spaceBetween: 30,
+                                    },
+                                }}
+                            >
+                                {imgArtistic.map((image, index) => (
+                                    <SwiperSlide key={index}>
+                                        <div className="swiperSlide">
+                                            <img
+                                                src={image}
+                                                alt={`Slide ${index + 1}`}
+                                            />
+                                        </div>
+                                    </SwiperSlide>
+                                ))}
+                            </Swiper>
+                        </div>
                     </Tab>
-                    <Tab eventKey="polish" title="Gel">
-                        Gel
+
+                    {/*  TAB => POLISH/GEL ---------------------------------- */}
+                    <Tab className="polish" eventKey="polish" title="Gel">
+                        <div className="tabs">
+                            <Swiper
+                                modules={[Pagination, Navigation]}
+                                pagination={{ clickable: true }}
+                                navigation={true}
+                                className="mySwiper"
+                                slidesPerView={3}
+                                spaceBetween={30}
+                                breakpoints={{
+                                    320: {
+                                        slidesPerView: 1,
+                                        spaceBetween: 10,
+                                    },
+
+                                    768: {
+                                        slidesPerView: 2,
+                                        spaceBetween: 20,
+                                    },
+
+                                    1024: {
+                                        slidesPerView: 3,
+                                        spaceBetween: 30,
+                                    },
+                                }}
+                            >
+                                {imgPolish.map((image, index) => (
+                                    <SwiperSlide key={index}>
+                                        <div className="swiperSlide">
+                                            <img
+                                                src={image}
+                                                alt={`Slide ${index + 1}`}
+                                            />
+                                        </div>
+                                    </SwiperSlide>
+                                ))}
+                            </Swiper>
+                        </div>
                     </Tab>
-                    <Tab eventKey="extension" title="Alongamento">
-                        Alongamento
+
+                    {/*  TAB => EXTENSION/ALONGAMENTO ----------------------- */}
+                    <Tab
+                        className="extension"
+                        eventKey="extension"
+                        title="Alongamento"
+                    >
+                        <div className="tabs">
+                            <Swiper
+                                modules={[Pagination, Navigation]}
+                                pagination={{ clickable: true }}
+                                navigation={true}
+                                className="mySwiper"
+                                slidesPerView={3}
+                                spaceBetween={30}
+                                breakpoints={{
+                                    320: {
+                                        slidesPerView: 1,
+                                        spaceBetween: 10,
+                                    },
+
+                                    768: {
+                                        slidesPerView: 2,
+                                        spaceBetween: 20,
+                                    },
+
+                                    1024: {
+                                        slidesPerView: 3,
+                                        spaceBetween: 30,
+                                    },
+                                }}
+                            >
+                                {imgExtension.map((image, index) => (
+                                    <SwiperSlide key={index}>
+                                        <div className="swiperSlide">
+                                            <img
+                                                src={image}
+                                                alt={`Slide ${index + 1}`}
+                                            />
+                                        </div>
+                                    </SwiperSlide>
+                                ))}
+                            </Swiper>
+                        </div>
                     </Tab>
                 </Tabs>
-            </div>
+            </section>
         </>
     )
 }

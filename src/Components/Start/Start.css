@@ -12,7 +12,7 @@
 
 .fleurDeLis img {
     width: 100px;
-    height: 110px;
+    object-fit: cover;
 }
 
 .start .text {

@@ -13,7 +13,7 @@ export default function Services() {
                 <div className="container">
                     <div className="servicesItems">
                         <img src={descNailArt} alt="" />
-                        <p className="servicesTitle">Nail Art</p>
+                        <p className="servicesTitle">Artístico</p>
                         <p className="servicesDesc">
                             Não é apenas beleza, é uma forma de arte onde cada
                             pincelada revela um pedaço da sua alma.
@@ -21,7 +21,7 @@ export default function Services() {
                     </div>
                     <div className="servicesItems">
                         <img src={descGelPolish} alt="" />
-                        <p className="servicesTitle">Gel Polish</p>
+                        <p className="servicesTitle">Gel</p>
                         <p className="servicesDesc">
                             Onde a cor encontra a eternidade, transformando cada
                             unha em uma obra-prima duradoura.
