@@ -1,0 +1,90 @@
+.aboutMe {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
+}
+
+.aboutMe h1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+}
+
+.photo,
+.text {
+    flex: 1;
+    text-align: justify;
+}
+
+.text {
+    padding-left: 20px;
+}
+
+.text span {
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.text a {
+    color: black;
+}
+
+.text a:hover {
+    color: #ceae71;
+}
+
+.mdi {
+    font-size: 50px;
+}
+
+.socialMedia a {
+    display: flex;
+    align-items: center;
+}
+
+.instagram {
+    font-size: 15px !important;
+    font-weight: 600;
+    padding-left: 10px;
+}
+
+@media screen and (max-width: 991px) {
+    .aboutMe .container {
+        display: flex;
+        align-items: center;
+        justify-content: center !important;
+    }
+
+    .photo {
+        align-items: center;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .text {
+        padding-left: 0px;
+    }
+}
+
+@media screen and (max-width: 505px) {
+    .photo img {
+        width: 400px;
+    }
+
+    .text {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 405px) {
+    .photo img {
+        width: 250px;
+    }
+}

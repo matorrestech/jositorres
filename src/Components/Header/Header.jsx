@@ -5,7 +5,7 @@ export default function Header() {
     return (
         <>
             <header>
-                {/* ---------- NAVIBAR DESKTOP */}
+                {/* NAVIBAR DESKTOP -------------------------------------------- */}
                 <div className="desktop">
                     <nav className="navDesktop">
                         <ul>
@@ -16,7 +16,7 @@ export default function Header() {
                                 <a href="#jobs">Trabalhos</a>
                             </li>
                             <li>
-                                <a href="#">Sobre mim</a>
+                                <a href="#aboutMe">Sobre mim</a>
                             </li>
                             <li>
                                 <a href="#">Contatos</a>
@@ -25,7 +25,7 @@ export default function Header() {
                     </nav>
                 </div>
 
-                {/* ---------- NAVIBAR MOBILE */}
+                {/* NAVIBAR MOBILE -------------------------------------------- */}
                 <div className="mobile">
                     <nav className="navMobile">
                         <ul>
@@ -41,7 +41,7 @@ export default function Header() {
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="#aboutMe">
                                     <i className="mdi mdi-account-heart"></i>
                                     Sobre mim
                                 </a>

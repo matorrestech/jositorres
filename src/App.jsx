@@ -9,16 +9,16 @@ import Header from "./Components/Header/Header"
 import Start from "./Components/Start/Start"
 import Services from "./Components/Services/Services"
 import Jobs from "./Components/Jobs/Jobs"
+import AboutMe from "./Components/AboutMe/AboutMe"
 
 function App() {
     return (
         <div>
             <Header />
             <Start />
-            <div className="screenHeight">
-                <Services />
-                <Jobs />
-            </div>
+            <Services />
+            <Jobs />
+            <AboutMe />
         </div>
     )
 }

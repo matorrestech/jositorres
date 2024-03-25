@@ -30,6 +30,7 @@
 .navDesktop ul li a:hover {
     color: #ceae71;
 }
+
 .mobile {
     display: none;
 }
@@ -42,17 +43,15 @@
         display: block;
     }
     .navMobile {
-        height: 45px;
+        height: 55px;
         background: rgba(0, 0, 0, 0.8);
         position: fixed;
         z-index: 1000;
-        bottom: 1%;
-        width: 95%;
+        bottom: 0;
+        width: 100%;
         left: 0;
         right: 0;
         margin: auto;
-        border-radius: 10px 10px 10px 10px;
-        box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
     }
     .navMobile ul {
         list-style: none;
@@ -66,7 +65,6 @@
     .navMobile ul li {
         text-align: center;
         margin-bottom: 5px;
-        /* border: 1px solid white; */
     }
 
     .navMobile ul li a {
@@ -75,17 +73,16 @@
         color: white;
         text-decoration: none;
         font-size: 10px;
-        width: 70px;
+        width: 80px;
     }
     .navMobile ul li a i {
         color: white;
-        font-size: 20px;
+        font-size: 25px;
         margin-bottom: -5px;
     }
 
     .navMobile ul li a:hover,
     .navMobile ul li a:hover i {
-        color: #daa520;
-        text-shadow: 0 0 3px #b3b3b3;
+        color: #ceae71;
     }
 }

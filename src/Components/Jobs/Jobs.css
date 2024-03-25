@@ -1,3 +1,7 @@
+.jobs {
+    padding-bottom: 60px;
+}
+
 .jobs h3 {
     text-align: center;
     padding-top: 20px;
@@ -28,16 +32,11 @@
     font-weight: 500;
     width: 100%;
 }
-
-.custom-tabs .nav-link:hover {
-    border-bottom: 1px solid black;
-    transition: 0.5s;
-}
-
 .custom-tabs .nav-link.active {
+    background: rgba(0, 0, 0, 0.8);
     color: #ceae71;
-    border-bottom: 1.5px solid #ceae71;
-    background: none;
+    border: none;
+    border-radius: 0;
 }
 
 /* SWIPER ---------------------------------------------- */
@@ -65,6 +64,7 @@
 .jobs .swiperSlide {
     display: flex;
     justify-content: center;
+    /* flex-wrap: wrap; */
 }
 
 /* IMAGES INSIDE OF SWIPER ------------------------------- */
@@ -80,4 +80,54 @@
 .jobs img:hover {
     box-shadow: 0 0 30px rgba(200, 200, 200);
     transition: 0.5s;
+}
+
+/* MOBILE/RESPONSIVE ----------------------------------------- */
+@media screen and (max-width: 514px) {
+    .jobs img {
+        width: 450px;
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 455px) {
+    .jobs img {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 405px) {
+    .jobs img {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 352px) {
+    .jobs img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .jobs .swiper-button-next:after,
+    .jobs .swiper-button-prev:after {
+        font-size: 15px;
+    }
+
+    .jobs .swiper-pagination-bullet {
+        background: white;
+        width: 5px;
+        height: 5px;
+    }
+    .jobs .swiper-pagination-bullet-active {
+        background: black;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .jobs img {
+        width: 250px;
+        height: 250px;
+    }
 }

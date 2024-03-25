@@ -16,8 +16,6 @@ import artistic04 from "../../assets/artistic/artistic04.webp"
 import artistic05 from "../../assets/artistic/artistic05.webp"
 import artistic06 from "../../assets/artistic/artistic06.webp"
 
-import fleurdelis from "../../assets/fleurDeLis.png"
-
 const imgArtistic = [
     artistic01,
     artistic02,
@@ -26,8 +24,34 @@ const imgArtistic = [
     artistic05,
     artistic06,
 ]
-const imgPolish = [fleurdelis]
-const imgExtension = [fleurdelis]
+
+// POLISH IMAGES ------------------------------------------
+import polish01 from "../../assets/polish/polish01.webp"
+import polish02 from "../../assets/polish/polish02.webp"
+import polish03 from "../../assets/polish/polish03.webp"
+import polish04 from "../../assets/polish/polish04.webp"
+import polish05 from "../../assets/polish/polish05.webp"
+import polish06 from "../../assets/polish/polish06.webp"
+
+const imgPolish = [polish01, polish02, polish03, polish04, polish05, polish06]
+
+// EXTENSION IMAGES ------------------------------------------
+import extension01 from "../../assets/extension/extension01.webp"
+import extension02 from "../../assets/extension/extension02.webp"
+import extension03 from "../../assets/extension/extension03.webp"
+import extension04 from "../../assets/extension/extension04.webp"
+import extension05 from "../../assets/extension/extension05.webp"
+import extension06 from "../../assets/extension/extension06.webp"
+
+const imgExtension = [
+    extension01,
+    extension02,
+    extension03,
+    extension04,
+    extension05,
+    extension06,
+]
+
 const imgAll = [].concat(imgArtistic, imgPolish, imgExtension)
 
 import Tab from "react-bootstrap/Tab"
@@ -37,7 +61,7 @@ export default function Jobs() {
     return (
         <>
             <section className="jobs">
-                <h3>Meus últimos designes criados</h3>
+                <h3>Trabalhos em Destaque</h3>
                 <Tabs
                     defaultActiveKey="all"
                     id="justify-tab-example"
@@ -55,17 +79,17 @@ export default function Jobs() {
                                 slidesPerView={3}
                                 spaceBetween={30}
                                 breakpoints={{
-                                    320: {
+                                    0: {
                                         slidesPerView: 1,
                                         spaceBetween: 10,
                                     },
 
-                                    768: {
+                                    1178: {
                                         slidesPerView: 2,
                                         spaceBetween: 20,
                                     },
 
-                                    1024: {
+                                    1474: {
                                         slidesPerView: 3,
                                         spaceBetween: 30,
                                     },
@@ -100,17 +124,17 @@ export default function Jobs() {
                                 slidesPerView={3}
                                 spaceBetween={30}
                                 breakpoints={{
-                                    320: {
+                                    0: {
                                         slidesPerView: 1,
                                         spaceBetween: 10,
                                     },
 
-                                    768: {
+                                    1178: {
                                         slidesPerView: 2,
                                         spaceBetween: 20,
                                     },
 
-                                    1024: {
+                                    1474: {
                                         slidesPerView: 3,
                                         spaceBetween: 30,
                                     },
@@ -141,17 +165,17 @@ export default function Jobs() {
                                 slidesPerView={3}
                                 spaceBetween={30}
                                 breakpoints={{
-                                    320: {
+                                    0: {
                                         slidesPerView: 1,
                                         spaceBetween: 10,
                                     },
 
-                                    768: {
+                                    1178: {
                                         slidesPerView: 2,
                                         spaceBetween: 20,
                                     },
 
-                                    1024: {
+                                    1474: {
                                         slidesPerView: 3,
                                         spaceBetween: 30,
                                     },
@@ -186,17 +210,17 @@ export default function Jobs() {
                                 slidesPerView={3}
                                 spaceBetween={30}
                                 breakpoints={{
-                                    320: {
+                                    0: {
                                         slidesPerView: 1,
                                         spaceBetween: 10,
                                     },
 
-                                    768: {
+                                    1178: {
                                         slidesPerView: 2,
                                         spaceBetween: 20,
                                     },
 
-                                    1024: {
+                                    1474: {
                                         slidesPerView: 3,
                                         spaceBetween: 30,
                                     },
