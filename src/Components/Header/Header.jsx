@@ -19,7 +19,7 @@ export default function Header() {
                                 <a href="#aboutMe">Sobre mim</a>
                             </li>
                             <li>
-                                <a href="#">Contatos</a>
+                                <a href="#contact">Contatos</a>
                             </li>
                         </ul>
                     </nav>
@@ -47,7 +47,7 @@ export default function Header() {
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="#contact">
                                     <i className="mdi mdi-notebook-heart"></i>
                                     Contatos
                                 </a>

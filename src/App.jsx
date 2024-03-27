@@ -10,6 +10,7 @@ import Start from "./Components/Start/Start"
 import Services from "./Components/Services/Services"
 import Jobs from "./Components/Jobs/Jobs"
 import AboutMe from "./Components/AboutMe/AboutMe"
+import Contacts from "./Components/Contacts/Contacts"
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
             <Services />
             <Jobs />
             <AboutMe />
+            <Contacts />
         </div>
     )
 }
