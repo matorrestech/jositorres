@@ -1,9 +1,22 @@
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.contact {
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+}
 .contact .container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 14px;
+    padding: 14px 0;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 .title {
@@ -11,11 +24,27 @@
     text-align: center;
 }
 
+.contactInfo {
+    margin: auto 10px;
+    width: 45%;
+}
+
+.contactInfo .mdi {
+    color: black;
+}
+
+.contactInfo .mdi:hover {
+    color: #ceae71;
+}
+
 .form {
-    max-width: 600px;
-    width: 100%;
+    width: 45%;
     display: flex;
     flex-direction: column;
+}
+
+.form form {
+    width: 100%;
 }
 
 .input {
@@ -47,4 +76,41 @@
 .button:hover {
     color: #ceae71;
     transform: scale(1.01);
+}
+
+@media screen and (max-width: 1399px) {
+    .contactInfo {
+        width: 48%;
+    }
+
+    .form {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .contact .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contactInfo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .form {
+        width: 95%;
+    }
 }

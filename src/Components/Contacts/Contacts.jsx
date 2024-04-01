@@ -1,83 +1,86 @@
-import React, { useState } from "react"
+import React from "react"
 import "./Contacts.css"
 
 export default function Contacts() {
-    const [formData, setFormData] = useState({
-        name: "",
-        email: "",
-        message: "",
-    })
-
-    // Atualiza o estado com os valores dos inputs
-    const handleChange = (e) => {
-        const { name, value } = e.target
-        setFormData({
-            ...formData,
-            [name]: value,
-        })
-    }
-
-    // Função para lidar com a submissão do formulário
-    const handleSubmit = async (e) => {
-        e.preventDefault() // Previne o comportamento padrão do formulário
-
-        try {
-            // Submete os dados do formulário usando Fetch API
-            const response = await fetch("http://localhost:3000/submit-form", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(formData),
-            })
-
-            if (response.ok) {
-                // Redireciona para matheustorres.com após sucesso
-                window.location.href =
-                    "https://jositorresnaildesigner.com/#contact"
-            } else {
-                // Trata respostas de erro
-                alert("Houve um problema com o envio do formulário.")
-            }
-        } catch (error) {
-            console.error("Erro ao enviar formulário:", error)
-            alert("Erro ao enviar o formulário.")
-        }
-    }
-
     return (
         <section className="contact" id="contact">
             <h1 className="title">Contato</h1>
             <div className="container">
-                <form className="form" onSubmit={handleSubmit}>
-                    <input
-                        name="name"
-                        className="input"
-                        type="text"
-                        placeholder="Digite seu nome"
-                        value={formData.name}
-                        onChange={handleChange}
-                    />
+                <div className="contactInfo">
+                    <h4>Josi Torres</h4>
+                    <span>
+                        Nail Designer
+                        <br />
+                    </span>
+                    <div className="linkItems">
+                        <a
+                            href="https://instagram.com/jositorresnaildesigner"
+                            target="_blank"
+                        >
+                            <i className="mdi mdi-instagram"></i>
+                        </a>
+                        <a href="http://wa.me/4407399083306" target="_blank">
+                            <i className="mdi mdi-whatsapp"></i>
+                        </a>
+                        <a href="mailto:josiazevedotorres@gmail.com">
+                            <i className="mdi mdi-email-heart-outline"></i>
+                        </a>
+                    </div>
+                    <p>
+                        2, Upper Terrace Road
+                        <br />
+                        Flat 3
+                        <br />
+                        Bournemouth
+                        <br />
+                        BH2 5NW
+                    </p>
+                </div>
 
-                    <input
-                        name="email"
-                        className="input"
-                        type="text"
-                        placeholder="Digite seu email"
-                        value={formData.email}
-                        onChange={handleChange}
-                    />
+                <div className="form">
+                    <form
+                        id="myForm"
+                        className="form"
+                        action="https://api.staticforms.xyz/submit"
+                        method="post"
+                    >
+                        <input
+                            type="hidden"
+                            name="accessKey"
+                            value="41a8d97a-3805-41a2-9739-00e549aaa7e2"
+                        ></input>
+                        <input
+                            name="name"
+                            className="input"
+                            type="text"
+                            placeholder="Digite seu nome"
+                        />
 
-                    <textarea
-                        name="message"
-                        className="textarea"
-                        placeholder="Digite sua mensagem..."
-                        value={formData.message}
-                        onChange={handleChange}
-                    />
+                        <input
+                            name="email"
+                            className="input"
+                            type="email"
+                            placeholder="Digite seu email"
+                        />
 
-                    <input className="button" type="submit" value="Enviar" />
-                </form>
+                        <textarea
+                            name="message"
+                            className="textarea"
+                            placeholder="Digite sua mensagem..."
+                        />
+
+                        <input
+                            className="button"
+                            type="submit"
+                            value="Enviar"
+                        />
+                        <input
+                            type="hidden"
+                            name="redirectTo"
+                            value="https://jositorres.com/#contact"
+                        ></input>
+                    </form>
+                </div>
             </div>
         </section>
     )
