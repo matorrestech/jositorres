@@ -17,18 +17,20 @@ export default function AboutMe() {
                             Olá, sou <span>Josi Torres</span>,
                         </p>
                         <p>
-                            Nail Designer brasileira na Inglaterra, onde misturo
-                            minha paixão por unhas artísticas e o amor pela
-                            minha família em cada design único que crio.
-                            Especializada em destacar a personalidade e a beleza
-                            natural através da manicure natural, esmaltação em
-                            gel, alongamento e unhas artísticas, minha jornada
-                            começou no Brasil. Agora, na Inglaterra, levo a
-                            alegria brasileira ao Nail Design, equilibrando
-                            carreira e dedicação familiar. Ofereço tratamentos
-                            que refletem este equilíbrio, além de cursos que
-                            inspiram e educam, promovendo a arte nas unhas como
-                            expressão de individualidade e paixão.
+                            Manicure, pedicure e Nail Designer na Inglaterra,
+                            minha história com as unhas começou muito cedo, aos
+                            17 anos, quando observava minha mãe trabalhando como
+                            manicure. Seus ensinamentos foram passados para mim,
+                            e minha paixão por unhas despertou. Com minha
+                            mudança para a Inglaterra, enxerguei a oportunidade
+                            de transformar meu amor e talento pelas unhas em um
+                            negócio. Fazer unhas é uma forma de promover
+                            autoestima e autocuidado entre as mulheres,
+                            valorizando a arte como expressão de individualidade
+                            de cada uma. Hoje, equilibro minha correria e
+                            dedicação à minha família entre os atendimentos no
+                            meu estúdio e cursos que inspiram e educam por meio
+                            da arte de fazer unhas.
                         </p>
                         <p>
                             Descubra a união da arte e amor em cada detalhe

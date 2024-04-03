@@ -24,16 +24,16 @@ export default function Services() {
                         <img src={descNailArt} alt="" />
                         <p className="servicesTitle">Artístico</p>
                         <p className="servicesDesc">
-                            Não é apenas beleza, é uma forma de arte onde cada
-                            pincelada revela um pedaço da sua alma.
+                            Não é apenas beleza, é uma forma de arte onde sua
+                            personalidade é expressada através das suas unhas.
                         </p>
                     </div>
                     <div className="servicesItems">
                         <img src={descGelPolish} alt="" />
                         <p className="servicesTitle">Gel</p>
                         <p className="servicesDesc">
-                            Onde a cor encontra a eternidade, transformando cada
-                            unha em uma obra-prima duradoura.
+                            A durabilidade em conjunto com o brilho permanente e
+                            a secagem instantânea.
                         </p>
                     </div>
                     <div className="servicesItems">
