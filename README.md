@@ -9,15 +9,15 @@ This project was created to provide an online platform for Josi Torres, a talent
 ## **Screenshots**
 
 <p align="center">
-  <img src="readme/screenshot01.png" alt="Screenshot 1">
+  <img src="readme/screenshot1.png" alt="Screenshot 1">
 </p>
 
 <p align="center">
-  <img src="readme/screenshot02.png" alt="Screenshot 2">
+  <img src="readme/screenshot2.png" alt="Screenshot 2">
 </p>
 
 <p align="center">
-  <img src="readme/screenshot02.png" alt="Screenshot 2">
+  <img src="readme/screenshot3.png" alt="Screenshot 2">
 </p>
 
 ## **Access the online project**
